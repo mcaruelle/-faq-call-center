@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Preguntas frecuentes de mecánica rápida: qué responder al cliente.">
+<meta name="theme-color" content="#F4F6F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1417" media="(prefers-color-scheme: dark)">
+<style>
+  :root{color-scheme:light dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);}
+  body{margin:0;font:14px system-ui,-apple-system,"Segoe UI",sans-serif;}
+  img{max-width:100%;}
+  [hidden]{display:none!important;}
+</style>
+<title>FAQ de Mecánica Rápida</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+  :root{
+    --bg:#F4F6F7;
+    --surface:#FFFFFF;
+    --surface-2:#EDF1F3;
+    --ink:#131A1F;
+    --ink-2:#3C4A53;
+    --muted:#65767F;
+    --line:#D9E1E5;
+    --line-strong:#BFCCD3;
+    --accent:#0E5C75;
+    --accent-ink:#0A4257;
+    --accent-soft:#DFEDF2;
+    --warn:#9A5512;
+    --warn-soft:#F7EADA;
+    --ok:#2C6A4F;
+    --ok-soft:#E0EFE7;
+    --radius:10px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0E1417;
+      --surface:#161D22;
+      --surface-2:#1D262C;
+      --ink:#E9EFF2;
+      --ink-2:#C2CED5;
+      --muted:#93A2AB;
+      --line:#27333A;
+      --line-strong:#38474F;
+      --accent:#63B9D6;
+      --accent-ink:#9AD4E8;
+      --accent-soft:#14323E;
+      --warn:#E0A96A;
+      --warn-soft:#2A2116;
+      --ok:#76C39C;
+      --ok-soft:#162C22;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0E1417;
+    --surface:#161D22;
+    --surface-2:#1D262C;
+    --ink:#E9EFF2;
+    --ink-2:#C2CED5;
+    --muted:#93A2AB;
+    --line:#27333A;
+    --line-strong:#38474F;
+    --accent:#63B9D6;
+    --accent-ink:#9AD4E8;
+    --accent-soft:#14323E;
+    --warn:#E0A96A;
+    --warn-soft:#2A2116;
+    --ok:#76C39C;
+    --ok-soft:#162C22;
+  }
+
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size:15.5px;
+    line-height:1.6;
+    padding-inline:20px;
+    padding-block:0 72px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto;}
+
+  /* ---------- cabecera ---------- */
+  header.head{
+    padding-block:44px 28px;
+    border-bottom:1px solid var(--line-strong);
+  }
+  .eyebrow{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);margin:0 0 14px;
+  }
+  h1{
+    font-family:"Archivo", system-ui, sans-serif;
+    font-weight:700;font-size:clamp(30px,6vw,44px);line-height:1.08;
+    letter-spacing:-.02em;margin:0 0 14px;text-wrap:balance;
+  }
+
+
+  /* ---------- avisos ---------- */
+
+  /* ---------- navegación ---------- */
+
+  /* ---------- gráfico ---------- */
+
+  /* ---------- buscador ---------- */
+  .search{
+    position:sticky;top:env(safe-area-inset-top, 0px);z-index:20;
+    background:var(--bg);
+    padding-block:12px 10px;margin-bottom:4px;
+    border-bottom:1px solid var(--line);
+  }
+  .search-field{position:relative;display:flex;align-items:center;}
+  .search-field svg{
+    position:absolute;left:14px;width:17px;height:17px;
+    stroke:var(--muted);fill:none;stroke-width:2;pointer-events:none;
+  }
+  #q{
+    width:100%;box-sizing:border-box;
+    font-family:"IBM Plex Sans",sans-serif;font-size:16.5px;color:var(--ink);
+    background:var(--surface);border:1.5px solid var(--line-strong);
+    border-radius:99px;padding:13px 44px 13px 40px;
+    appearance:none;
+  }
+  #q::placeholder{color:var(--muted);}
+  #q::-webkit-search-cancel-button,
+  #q::-webkit-search-decoration{-webkit-appearance:none;appearance:none;display:none;}
+  #q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft);}
+  #clear{
+    position:absolute;right:8px;width:30px;height:30px;border-radius:50%;
+    border:none;background:var(--surface-2);color:var(--muted);
+    font-size:17px;line-height:1;cursor:pointer;display:none;
+  }
+  #clear:hover{color:var(--ink);}
+  #clear:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+  .search-meta{
+    display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;
+    margin-top:9px;font-size:12.5px;color:var(--muted);
+  }
+  .search-meta kbd{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;
+    border:1px solid var(--line-strong);border-radius:4px;padding:1px 5px;
+    background:var(--surface);color:var(--ink-2);
+  }
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+  .chips[hidden]{display:none;}
+  .chip{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;
+    border:1px solid var(--line);background:var(--surface);color:var(--ink-2);
+    padding:4px 10px;border-radius:99px;cursor:pointer;
+  }
+  .chip:hover{border-color:var(--accent);color:var(--accent);}
+  .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg);}
+  .chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+  mark{background:var(--accent-soft);color:var(--ink);padding:0 2px;border-radius:3px;}
+  .empty{
+    display:none;margin:48px 0;padding:24px;text-align:center;
+    border:1px dashed var(--line-strong);border-radius:var(--radius);color:var(--muted);
+  }
+  .empty strong{display:block;color:var(--ink);font-family:"Archivo",sans-serif;font-size:17px;margin-bottom:6px;}
+
+
+  /* ---------- mecánica ---------- */
+  .reglas{
+    margin-top:32px;padding:18px 20px;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  }
+  .reglas h2{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--accent);margin:0 0 10px;font-weight:500;
+  }
+  .reglas ul{margin:0;padding-left:18px;}
+  .reglas li{margin-bottom:5px;font-size:14.5px;color:var(--ink-2);}
+  .reglas li:last-child{margin-bottom:0;}
+  .reglas strong{color:var(--ink);font-weight:600;}
+  .ruta, .criterio{
+    display:flex;gap:10px;align-items:baseline;
+    font-size:13.5px;color:var(--muted);margin:12px 0 4px;
+  }
+  .criterio{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--line);}
+  .ruta span, .criterio span{
+    flex:none;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--accent);
+  }
+  .criterio span{color:var(--warn);}
+  .volver{margin:14px 0 0;font-size:13px;}
+  .volver a{color:var(--muted);text-decoration:none;}
+  .volver a:hover{color:var(--accent);}
+
+  /* ---------- pestañas ---------- */
+  .tabs{display:flex;gap:4px;margin-top:22px;border-bottom:1px solid var(--line);}
+  .tab-btn{
+    font-family:"Archivo",sans-serif;font-size:14.5px;font-weight:600;
+    color:var(--muted);background:none;border:none;cursor:pointer;
+    padding:10px 14px;border-bottom:2.5px solid transparent;margin-bottom:-1px;
+  }
+  .tab-btn:hover{color:var(--ink-2);}
+  .tab-btn[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent);}
+  .tab-btn:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;}
+
+  /* ---------- panel de uso ---------- */
+  .gate{
+    max-width:420px;margin:56px auto;padding:26px 24px;text-align:center;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  }
+  .gate h2{font-family:"Archivo",sans-serif;font-size:19px;margin:0 0 6px;}
+  .gate p{margin:0 0 16px;font-size:14px;color:var(--muted);}
+  .gate form{display:flex;gap:8px;justify-content:center;}
+  .gate input{
+    flex:1;min-width:0;font-family:"IBM Plex Mono",monospace;font-size:15px;text-align:center;
+    letter-spacing:.1em;color:var(--ink);background:var(--bg);
+    border:1.5px solid var(--line-strong);border-radius:8px;padding:10px 12px;
+  }
+  .gate input:focus{outline:none;border-color:var(--accent);}
+  .gate button{
+    font-family:"Archivo",sans-serif;font-weight:600;font-size:14px;cursor:pointer;
+    color:var(--bg);background:var(--accent);border:none;border-radius:8px;padding:10px 18px;
+  }
+  .gate .err{color:var(--warn);font-size:13.5px;margin:12px 0 0;min-height:1em;}
+
+  .stats h2{
+    font-family:"Archivo",sans-serif;font-size:19px;font-weight:600;margin:36px 0 2px;
+  }
+  .stats .sub{font-size:13.5px;color:var(--muted);margin:0 0 18px;}
+  .kpis{display:flex;flex-wrap:wrap;gap:28px;margin:4px 0 8px;}
+  .kpi{display:flex;flex-direction:column;gap:2px;}
+  .kpi b{
+    font-family:"IBM Plex Mono",monospace;font-size:26px;font-weight:500;
+    color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.1;
+  }
+  .kpi span{
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--muted);
+  }
+  .bars{display:flex;flex-direction:column;gap:9px;}
+  .bar-row{display:grid;grid-template-columns:minmax(110px,220px) 1fr auto;gap:12px;align-items:center;}
+  .bar-label{font-size:13.5px;color:var(--ink-2);line-height:1.25;word-break:break-word;}
+  .bar-track{background:var(--surface-2);border-radius:3px;height:14px;overflow:hidden;}
+  .bar-fill{display:block;height:100%;background:var(--accent);border-radius:0 4px 4px 0;}
+  .bar-fill.cero{background:var(--warn);}
+  .bar-val{
+    font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-2);
+    font-variant-numeric:tabular-nums;min-width:34px;text-align:right;
+  }
+  @media (max-width:520px){
+    .bar-row{grid-template-columns:1fr auto;grid-template-areas:"lab val" "track track";gap:4px 10px;}
+    .bar-label{grid-area:lab;} .bar-val{grid-area:val;} .bar-track{grid-area:track;margin-bottom:4px;}
+  }
+  .vacio{color:var(--muted);font-size:14px;margin:0;}
+
+  /* ---------- bloques ---------- */
+  section.block{margin-top:56px;scroll-margin-top:16px;}
+  .block-head{
+    display:flex;align-items:baseline;gap:12px;
+    padding-bottom:10px;border-bottom:2px solid var(--ink);margin-bottom:6px;
+  }
+  .block-num{
+    font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--accent);
+    letter-spacing:.08em;
+  }
+  .block-head h2{
+    font-family:"Archivo",sans-serif;font-weight:600;font-size:22px;
+    letter-spacing:-.01em;margin:0;
+  }
+  .block-desc{font-size:14px;color:var(--muted);margin:10px 0 0;}
+
+  .faq{
+    border-bottom:1px solid var(--line);
+    padding:20px 0;
+  }
+  .faq:last-child{border-bottom:none;}
+  .faq h3{
+    font-family:"Archivo",sans-serif;font-weight:600;font-size:17.5px;
+    line-height:1.32;margin:0 0 10px;text-wrap:balance;
+  }
+  .quote{
+    font-style:italic;color:var(--muted);font-size:14px;margin:0 0 14px;
+    padding-left:13px;border-left:2px solid var(--line-strong);
+  }
+
+  .say{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:13px 16px 15px;margin:0;
+  }
+  .say-label{
+    display:block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+    letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;
+  }
+  .say p{margin:0;font-size:16px;line-height:1.55;color:var(--ink);}
+  .say.pendiente{background:var(--warn-soft);border-color:var(--warn);}
+  .say.pendiente .say-label{color:var(--warn);}
+  .say.pendiente p{color:var(--ink-2);font-size:15px;}
+
+
+  .tags{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:10px;}
+  .tag{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;
+    padding:3px 9px;border-radius:99px;border:1px solid var(--line-strong);
+    color:var(--muted);white-space:nowrap;
+  }
+  .tag.validar{border-color:var(--warn);color:var(--warn);background:var(--warn-soft);}
+
+  /* ---------- cierre ---------- */
+
+  a{color:var(--accent);}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="head">
+    <p class="eyebrow">Call Center · Mecánica rápida · Aurgi / Motortown</p>
+    <h1>Preguntas frecuentes de mecánica</h1>
+  </header>
+  <p class="volver"><a href="index.html">← Todas las FAQ</a></p>
+
+  <div class="tabs" role="tablist" aria-label="Secciones">
+    <button class="tab-btn" type="button" role="tab" data-tab="faq" aria-selected="true" aria-controls="panel-faq">Preguntas</button>
+    <button class="tab-btn" type="button" role="tab" data-tab="uso" aria-selected="false" aria-controls="panel-uso">Qué se busca</button>
+  </div>
+
+  <div id="panel-faq" role="tabpanel">
+
+  <div class="search">
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Busca lo que te está diciendo el cliente…"
+             aria-label="Buscar una pregunta">
+      <button id="clear" type="button" aria-label="Borrar búsqueda">×</button>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip" type="button" aria-pressed="false">neumáticos</button>
+      <button class="chip" type="button" aria-pressed="false">batería</button>
+      <button class="chip" type="button" aria-pressed="false">aceite</button>
+      <button class="chip" type="button" aria-pressed="false">frenos</button>
+      <button class="chip" type="button" aria-pressed="false">aire acondicionado</button>
+      <button class="chip" type="button" aria-pressed="false">amortiguadores</button>
+      <button class="chip" type="button" aria-pressed="false">matrícula</button>
+      <button class="chip" type="button" aria-pressed="false">ozono</button>
+      <button class="chip" type="button" aria-pressed="false">cita</button>
+      <button class="chip" type="button" aria-pressed="false">devolución</button>
+      <button class="chip" type="button" aria-pressed="false">itv</button>
+      <button class="chip" type="button" aria-pressed="false">coche eléctrico</button>
+    </div>
+    <p class="search-meta">
+      <span id="count" aria-live="polite"></span>
+      <span><kbd>/</kbd> para buscar · <kbd>Esc</kbd> para borrar</span>
+    </p>
+  </div>
+
+  <div class="empty" id="empty">
+    <strong>Nada con esas palabras</strong>
+    Prueba con una sola: «batería», «frenos», «ozono».
+  </div>
+
+    <div class="reglas">
+      <h2>Vale para todas las llamadas</h2>
+      <ul>
+        <li><strong>Taller.</strong> Saber a qué taller quiere ir el cliente es imprescindible. Es el dato que hay que conseguir siempre, en cualquier servicio.</li>
+        <li><strong>Precio.</strong> No se dan precios cerrados por teléfono: depende del modelo, y el presupuesto cerrado se entrega antes de empezar.</li>
+        <li><strong>Seguridad.</strong> Nunca se confirma por teléfono que sea seguro conducir con una avería; se recomienda acudir cuanto antes.</li>
+        <li><strong>Autorización.</strong> No se repara nada sin autorización previa del cliente.</li>
+        <li><strong>Gratis.</strong> Diagnóstico de batería para clientes de Mutua; comprobación de frenos y de líquido de frenos dentro de los puntos de control de los packs.</li>
+        <li><strong>Si no está aquí, no se improvisa.</strong> Se deriva al taller o a un agente.</li>
+      </ul>
+    </div>
+
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 1</span><h2>Neumáticos</h2></div>
+      <p class="ruta"><span>IVR</span>Opción 1 (cambio) y Opción 5 (pinchazo) · Pedir: medidas del neumático (ficha técnica o lateral) y centro.</p>
+      <div class="faq">
+        <h3>¿Puedo mezclar marcas o medidas distintas entre ejes?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«No se recomienda mezclar marcas ni modelos distintos en un mismo eje. Si hace falta, se iguala siempre el eje delantero o el trasero, nunca en diagonal.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿El equilibrado y la alineación van incluidos en el precio?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«El equilibrado suele ir incluido en el cambio. La alineación se presupuesta aparte, porque no siempre es necesaria.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Tenéis neumáticos de invierno o all season?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, tenemos de verano, invierno y all season, de distintas marcas y gamas.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué presión debo llevar en mi modelo?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«La que indique el fabricante. La encontrará en la etiqueta del marco de la puerta del conductor, en la tapa del depósito o en la guantera. Se la ajustamos en cada cambio o revisión.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Puedo cambiar los neumáticos de posición?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, se pueden cambiar de eje. Eso es una permutación y se añade al presupuesto.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Compráis o recicláis los neumáticos viejos?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«No los compramos. El reciclaje lo gestionamos a través de un gestor autorizado.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Puedo llevarme mis neumáticos viejos?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí. Avísenos antes de pagar y se los entregan al terminar el servicio.»</p></div>
+      </div>
+      <p class="criterio"><span>Criterio</span>No se venden neumáticos sin montaje ni se trabaja con neumáticos de segunda mano. Si el cliente no tiene las medidas, están en el lateral del neumático o en la ficha técnica.</p>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 2</span><h2>Baterías</h2></div>
+      <p class="ruta"><span>IVR</span>Opción 2 · Preguntar primero si quiere montaje: (2.1) sí → pedir el taller; (2.2) sólo compra → redirigir al taller.</p>
+      <div class="faq">
+        <h3>¿Cómo sé si es la batería o es otra cosa (alternador, motor de arranque)?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Lo típico de batería es que cueste arrancar, que las luces del salpicadero parpadeen o se vean flojas y que el arranque suene lento o haga clics. Si el fallo aparece de golpe después de haber arrancado bien, suele ser el alternador o el motor de arranque. En el taller le hacemos un diagnóstico eléctrico gratuito de batería, alternador y sistema de carga.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto dura una batería y cada cuánto hay que cambiarla?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Entre 4 y 6 años, según el uso, el clima y los trayectos: los recorridos cortos y frecuentes la desgastan más. Conviene revisarla a partir del tercer año, sobre todo antes del invierno.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Tenéis la batería de mi coche en stock?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Trabajamos con las principales marcas. La mayoría están en el taller y el resto llega en 24 o 48 horas. Con la matrícula o el modelo exacto se lo confirmo antes de la visita.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto tarda el cambio? ¿Puedo esperar?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Es rápido, entre 15 y 30 minutos. Puede esperar en el taller.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué garantía tiene la batería nueva?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Garantía de fabricante, normalmente de 2 a 4 años según marca y gama. El periodo empieza a contar el día que se emite la factura, y el plazo exacto le figura en el presupuesto.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Os quedáis con la batería vieja?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, se la retiramos y la llevamos a un punto de reciclaje autorizado, sin coste.»</p></div>
+      </div>
+      <p class="criterio"><span>Criterio</span>Si el cliente duda entre batería, alternador o motor de arranque, se le ofrece el diagnóstico eléctrico gratuito en taller.</p>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 3</span><h2>Revisiones y cambio de aceite</h2></div>
+      <p class="ruta"><span>IVR</span>Opción 3 (revisión) y Opción 4 (cambio de aceite) · Pedir: taller donde lo quiere hacer.</p>
+      <div class="faq">
+        <h3>¿Qué incluye exactamente la revisión?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Depende del pack. El básico lleva aceite, filtro de aceite y comprobación de niveles, presión de neumáticos y luces. Los más completos añaden filtro de aire, filtro de habitáculo e inspección de frenos, amortiguadores y correas. Se lo detallamos por escrito antes de confirmar.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cada cuántos kilómetros hay que cambiar el aceite?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Como orientación, entre 10.000 y 15.000 km o una vez al año, lo que ocurra antes. Depende del fabricante, del tipo de aceite y del uso; se consulta siempre el manual de mantenimiento.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué aceite usáis? ¿Es el que pide el fabricante?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Aceites homologados según la especificación que exige el fabricante, API o ACEA, y sintético cuando el motor lo requiere.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Esto me mantiene la garantía de fábrica?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí. Usando recambios y aceites homologados y respetando los intervalos del fabricante, el servicio no afecta a la garantía oficial, conforme a la normativa europea.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto cuesta y cuánto tarda?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«El precio depende del modelo y del tipo de aceite; se le da presupuesto cerrado antes de empezar. Suele llevar entre 45 minutos y una hora.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Me avisáis si encontráis otra avería durante la revisión?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Siempre. Cualquier cosa que aparezca se le comunica y se le presupuesta antes de tocar nada: no se repara sin su autorización.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Puedo traer mi propio aceite?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«No, trabajamos con suministro propio homologado.»</p></div>
+      </div>
+      <p class="criterio"><span>Criterio</span>Si el cliente duda sobre la garantía de fábrica, se le confirma que el servicio no la afecta mientras se usen productos homologados y se respeten los intervalos del fabricante.</p>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 4</span><h2>Carga de aire acondicionado</h2></div>
+      <p class="ruta"><span>IVR</span>Opción 6 · Pedir: año del coche y centro.</p>
+      <div class="faq">
+        <h3>¿Cómo sé si necesito recargar el gas o tengo una fuga?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Si enfría cada vez menos o ha dejado de enfriar, lo normal es que el gas esté bajo. Comprobamos la presión y, si se vacía a menudo, buscamos fugas con líquido trazador o cámara UV.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué diferencia hay entre la recarga y la revisión completa?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«La recarga repone el gas a su nivel. La revisión completa además comprueba que el circuito no pierda.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto cuesta la carga de gas?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Depende de la cantidad y del tipo de gas que lleve su vehículo; el importe exacto se le confirma antes de hacerlo.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cada cuánto hay que recargarlo aunque funcione bien?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Conviene revisarlo cada dos años: el sistema pierde algo de gas con el tiempo aunque no haya fuga.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Detectáis las fugas durante el proceso?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, se comprueba la presión y, si hace falta, se aplica un trazador para localizarla. Si la fuga es evidente, no se hace la carga.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto tarda?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«La recarga estándar, entre 30 y 45 minutos.»</p></div>
+      </div>
+      <p class="criterio"><span>Criterio</span>Se avisa de antemano de que, si hay una fuga evidente, no se realizará la carga de gas.</p>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 5</span><h2>Frenos (pastillas y discos)</h2></div>
+      <p class="ruta"><span>IVR</span>Opción 7 · Pedir: taller donde lo quiere hacer.</p>
+      <div class="faq">
+        <h3>¿Necesito cambiar sólo las pastillas o también los discos?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Se revisa el grosor de las pastillas y el estado de los discos. Si las pastillas han dañado el disco o está por debajo del grosor mínimo, se recomienda cambiar los dos. La comprobación es gratuita, antes de presupuestar.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Me hace un ruido o un chirrido al frenar, ¿es grave?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Puede ser sólo el indicador de desgaste de las pastillas, pero también algo mayor. No lo demore: en la mayoría de talleres se lo revisamos sin cita previa.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto cuesta cambiar las pastillas?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Varía según el modelo y la marca de pastillas. Se le da presupuesto exacto tras revisar el vehículo o con los datos de la matrícula.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto duran los discos de freno?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«De media, entre 60.000 y 100.000 km, según la conducción y si es más de ciudad o de carretera. Conviene revisarlos en cada cambio de pastillas.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Es seguro seguir conduciendo así hasta la cita?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Eso no se lo puedo confirmar por teléfono sin verlo. Por seguridad, si hay ruidos, vibraciones o el coche tira hacia un lado, acuda cuanto antes.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué marcas de pastillas y discos ponéis?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Marcas de referencia del sector, equivalentes a equipo original, y según el taller también alternativas de otras gamas.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Podéis revisar los frenos junto con otro servicio el mismo día?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, es habitual combinarlo con el cambio de aceite o de neumáticos en la misma visita.»</p></div>
+      </div>
+      <p class="criterio"><span>Criterio</span>Nunca se confirma por teléfono que sea seguro seguir conduciendo. Se recomienda acudir al taller cuanto antes.</p>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 6</span><h2>Líquido de frenos y anticongelante</h2></div>
+      <p class="ruta"><span>IVR</span>Opción 8 · Pedir: taller donde quiere hacer el cambio.</p>
+      <div class="faq">
+        <h3>¿Cada cuánto hay que cambiar el líquido de frenos?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Cada dos años aproximadamente, independientemente de los kilómetros, porque absorbe humedad con el tiempo.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué pasa si no lo cambio a tiempo?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«El líquido envejecido baja su punto de ebullición y puede restar eficacia a la frenada, además de favorecer la corrosión interna.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Se puede hacer junto con la revisión general?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, es habitual incluirlo en una revisión de mantenimiento completa.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto cuesta y cuánto se tarda el cambio de líquido de frenos?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«El coste depende del modelo. El proceso, con la purga del circuito incluida, suele llevar entre 30 y 45 minutos.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cómo sé si mi líquido de frenos está mal?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Tenemos un comprobador que mide la humedad del líquido en pocos segundos, y es gratis.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cada cuánto se cambia el anticongelante?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Cada 2 a 4 años, o lo que indique el fabricante: sus propiedades se degradan aunque el nivel no baje.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué pasa si mezclo anticongelantes de distinto color?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«No se recomienda: pueden perder eficacia o generar sedimentos. Si no sabe cuál lleva, se lo comprobamos antes de rellenar o cambiar.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cómo sé si tengo una fuga de refrigerante?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Si tiene que rellenar a menudo, aparecen manchas debajo del coche, huele dulzón o el motor va más caliente de lo normal. Se puede revisar el circuito completo.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto cuesta y cuánto dura el cambio de anticongelante?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Depende del modelo y de la cantidad de líquido. Con la purga incluida, entre 30 y 60 minutos.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Hay que purgar el circuito después del cambio?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, es imprescindible para sacar el aire y evitar sobrecalentamientos. Va siempre incluido en el servicio.»</p></div>
+      </div>
+      <p class="criterio"><span>Criterio</span>En el pack de revisiones va incluido el rellenado de líquidos, siempre que no estén por debajo de lo indicado.</p>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 7</span><h2>Limpieza de circuito</h2></div>
+      <p class="ruta"><span>IVR</span>Opción 9 · Pedir: taller. No hay apartado propio en el FAQ: primero hay que aclarar a qué se refiere el cliente.</p>
+      <div class="faq">
+        <h3>Quiero una limpieza de circuito</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Para dirigirle bien: ¿se refiere a limpiar o desinfectar el habitáculo, o a purgar un circuito de líquidos? ¿Qué nota en el coche o qué le han recomendado?» — Si es habitáculo, va por desinfección por ozono. Si es purga de líquidos, por líquido de frenos y anticongelante.</p></div>
+      </div>
+      <p class="criterio"><span>Criterio</span>Si la petición no está clara, se pregunta al cliente qué nota en el vehículo o qué le han recomendado hacer.</p>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 8</span><h2>Pulido de faros</h2></div>
+      <p class="ruta"><span>IVR</span>Opción 10 · Sólo en horario de mañana · Pedir: taller.</p>
+      <div class="faq">
+        <h3>¿Podéis pulir los faros amarillentos u opacos?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, hacemos pulido y restauración de ópticas: quita la opacidad y el amarilleo, y mejora la iluminación de noche. Eso sí, este servicio sólo lo hacemos por la mañana.»</p></div>
+      </div>
+      <p class="criterio"><span>Criterio</span>Al proponer la cita se avisa de que el servicio sólo se realiza por la mañana.</p>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 9</span><h2>Iluminación y escobillas</h2></div>
+      <p class="ruta"><span>IVR</span>Opción 11 · Pedir: centro donde lo quiere hacer.</p>
+      <div class="faq">
+        <h3>¿Cambiáis sólo la bombilla o hay que sustituir el faro entero?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«En la mayoría de casos basta con cambiar la bombilla fundida. El faro completo sólo se sustituye si está roto, tiene condensación permanente o daños en la carcasa.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Tenéis bombillas LED homologadas para mi modelo?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, tenemos bombillas homologadas compatibles con distintos modelos. Es importante que sean homologadas para pasar la ITV sin problemas.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto cuesta cambiar una luz?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Depende del tipo de bombilla o piloto —halógena, LED o xenón— y del modelo del vehículo.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Revisáis la altura de las luces después?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, después de cualquier cambio de bombilla u óptica se comprueba y se ajusta la altura del haz.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Es rápido o tengo que dejar el coche?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Una bombilla son 10 o 20 minutos y normalmente puede esperar. Una óptica completa lleva algo más.»</p></div>
+      </div>
+      <p class="criterio"><span>Criterio</span>El FAQ no cubre escobillas limpiaparabrisas: se deriva según el IVR y se confirma disponibilidad con el taller.</p>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 10</span><h2>Amortiguadores</h2></div>
+      <p class="ruta"><span>IVR</span>Sin opción propia en el IVR · Se trata como revisión o presupuesto (Opción 3 u Opción 14) · Pedir: taller.</p>
+      <div class="faq">
+        <h3>¿Cómo sé si tengo los amortiguadores gastados?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Señales típicas: balanceo en curvas, que el coche rebote después de un bache, que se hunda al frenar de golpe o desgaste irregular en los neumáticos. Se hace inspección visual y en banco de suspensión.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Se nota sólo en carretera o también en ciudad?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«En los dos sitios, aunque en ciudad se nota menos por la velocidad. En carretera, baches y rotondas es donde más se aprecia.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Hay que cambiarlos por parejas?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, se recomienda cambiar siempre los dos del mismo eje para que el comportamiento sea simétrico, aunque sólo esté dañado uno.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto cuesta el cambio y cuánto tarda?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Depende del modelo y de si se cambian dos o cuatro; se le da presupuesto cerrado antes. Suele llevar entre una y dos horas por eje.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Afecta a la ITV si están gastados?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí. Unos amortiguadores muy deteriorados pueden ser motivo de defecto, porque afectan a la frenada y a la estabilidad.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué marca de amortiguadores montáis?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Marcas reconocidas del sector, equivalentes a las de equipo original.»</p></div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 11</span><h2>Matrículas</h2></div>
+      <p class="ruta"><span>IVR</span>Opción 14 · No todos los centros tienen troqueladora: unos la hacen al momento y otros la encargan.</p>
+      <div class="faq">
+        <h3>¿Hacéis matrículas?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, en nuestros talleres hacemos matrículas.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué tipos de matrícula tenéis y cuánto cuestan?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Tenemos de aluminio convencional y de metacrilato. El precio depende de la que elija.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Tengo que llevar alguna documentación?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí: la documentación del coche y su documento de identidad.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Me la hacéis el mismo día?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Si el taller tiene troqueladora, sí, el mismo día. Si no la tiene, se hace el encargo.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto se tarda?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Con troqueladora en el taller, unos 35 minutos. Si hay que encargarla, unos 3 días.»</p></div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 12</span><h2>Desinfección por ozono</h2></div>
+      <p class="ruta"><span>IVR</span>Sin opción propia en el IVR · Se trata como cita de mantenimiento (Opción 3 u Opción 14) · Pedir: taller.</p>
+      <div class="faq">
+        <h3>¿En qué consiste el tratamiento?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Se genera ozono dentro del habitáculo durante un tiempo determinado. Actúa como oxidante y elimina bacterias, ácaros, hongos y malos olores, incluido el sistema de climatización.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Quita olores de humo, mascotas o humedad?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, va especialmente bien con los olores persistentes —tabaco, mascotas, humedad, comida— porque neutraliza el origen.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Es seguro para la tapicería, los plásticos y la electrónica?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Sí, siguiendo el protocolo adecuado es seguro para todos esos materiales.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto dura el proceso?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Entre 30 y 60 minutos, más un tiempo de ventilado. Normalmente recoge el coche el mismo día.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cada cuánto se recomienda?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Una o dos veces al año como mantenimiento preventivo, o cuando aparezca un olor persistente.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué precio tiene?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Es un servicio de coste reducido comparado con otras intervenciones. El precio exacto se lo damos al confirmar la cita y puede variar según el vehículo.»</p></div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="block-head"><span class="block-num">SERVICIO 13</span><h2>Test de vida de batería · coche eléctrico</h2></div>
+      <p class="ruta"><span>IVR</span>Todavía sin opción propia asignada: se trata como revisión o cita (Opción 3 u Opción 14) · Pedir: taller.</p>
+      <div class="faq">
+        <h3>¿Qué es el test de vida de la batería de un coche eléctrico?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Mide el estado de salud de la batería: le dice qué capacidad y qué eficiencia real le queda. Es la mejor forma de saber cómo está el componente más caro de su coche.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Para qué me sirve?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Para conocer el estado real de la batería, adelantarse a posibles problemas y decidir con criterio sobre mantenimiento, uso o incluso la venta del vehículo.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Es obligatorio o sólo recomendable?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Obligatorio no es, pero sí muy recomendable, sobre todo si hace muchos kilómetros, si nota menos autonomía o si quiere asegurarse del estado del coche a medio y largo plazo.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cómo se hace el test?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Es sencillo: pide cita y se lo hacemos en un centro especializado. Se analizan los datos del vehículo y se le entrega un informe claro.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cada cuánto conviene hacerlo?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Una vez al año como orientación, o cuando note que rinde menos de lo normal.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué información me dan?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Un informe con el estado de salud de la batería, el SOH, que indica su nivel de degradación y su rendimiento actual.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Qué me aporta frente a una revisión normal?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Una revisión corriente no entra en la batería. Este test se centra justo en el componente clave del coche eléctrico y le da información específica y objetiva.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cuánto dura la revisión?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Entre 10 y 15 minutos, así que no le va a trastocar el día.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Puedo ir sin cita previa?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«Puede, pero le recomiendo pedir cita en un centro Aurgi para que le atiendan cuanto antes. Si hay mucha gente, sin cita puede tocarle esperar.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿La revisión gratuita incluye el cambio de batería?</h3>
+        <div class="say"><span class="say-label">Qué decir</span><p>«No, la revisión es un diagnóstico sin coste. Si sale que la batería está mal, se gestiona aparte según la causa y la cobertura de su seguro.»</p></div>
+      </div>
+      <p class="criterio"><span>Criterio</span>El test es un diagnóstico sin coste y no incluye el cambio de batería. Falta asignarle opción propia en el IVR.</p>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><span class="block-num">OPERATIVA</span><h2>Gestión y trámites</h2></div>
+      <p class="ruta"><span>IVR</span>Casos que sólo vienen del guion del IVR: se piden datos o se deriva.</p>
+      <div class="faq">
+        <h3>Quiero cambiar mi cita</h3>
+        <div class="say"><span class="say-label">Qué hacer · Opción 12</span><p>«¿Tiene a mano el documento o la matrícula con la que reservó la cita?»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Llamo por un presupuesto que ya me disteis</h3>
+        <div class="say"><span class="say-label">Qué hacer · Opción 13</span><p>«¿Tiene a mano el número de documento del presupuesto?»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Quiero un presupuesto de mecánica rápida</h3>
+        <div class="say"><span class="say-label">Qué hacer · Opción 14 → 14.2</span><p>Que describa brevemente el servicio y se deriva a un agente.</p></div>
+      </div>
+      <div class="faq">
+        <h3>Llamo por un tema de mecánica o de lunas</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 1</span><p>Se deriva al departamento que indique el cliente.</p></div>
+      </div>
+      <div class="faq">
+        <h3>Quiero un duplicado de la matrícula</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 2</span><p>«Tiene que acudir al taller con la ficha técnica para encargarla.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Quiero una devolución y pagué en el taller</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 3.1.A</span><p>«Tiene que acudir directamente al centro donde lo hizo.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Quiero una devolución y pagué por teléfono (Bizum)</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 3.1.B</span><p>«Espere un momento en línea, que le paso con un agente para tramitárselo.»</p></div>
+      </div>
+
+      <div class="faq">
+        <h3>Quiero una devolución y pagué por la web</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 3.1.B</span><p>«Al haber comprado por la web, la devolución se tramita ahí mismo: entre en la página y pulse la pestaña «Contacto».»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Devolución de una compra web de AURGI</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 4</span><p>«Entre en aurgi.com, icono «devolución» abajo a la izquierda, elija SERVICIOS o ARTÍCULOS y rellene el formulario.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Devolución de una compra web de MOTORTOWN</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 5</span><p>«Escriba a atencion.cliente@motortown.es y espere respuesta.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Voy a llegar tarde a la cita</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 6</span><p>«Se recomienda llegar 10 minutos antes. Lo mejor es que llame al taller; si quiere cambiar la hora, le paso con un agente.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Quiero poner una reclamación</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 7</span><p>«Escriba a atencion.cliente@aurgi.com.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Quiero verificar un pedido web</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 8</span><p>«Escriba a atencion.cliente@aurgi.com indicando el número de pedido.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Cómo va mi coche en el taller?</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 9</span><p>«Lo mejor es que llame directamente al centro.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>¿Hacéis servicios para motos?</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 10</span><p>«Para motos no hacemos servicios. Los neumáticos o los artículos sí puede comprarlos por la web.»</p></div>
+      </div>
+      <div class="faq">
+        <h3>Quiero comprar neumáticos sin montaje</h3>
+        <div class="say"><span class="say-label">Qué hacer · Información 11</span><p>«No los vendemos sin montaje, y tampoco trabajamos con neumáticos de segunda mano.»</p></div>
+      </div>
+    </section>
+
+</div>
+
+  </div>
+
+  <div id="panel-uso" role="tabpanel" hidden>
+    <div class="gate" id="gate">
+      <h2>Panel de uso</h2>
+      <p>Hace falta el código interno para ver qué está buscando el equipo.</p>
+      <form id="gate-form">
+        <input id="codigo" type="password" inputmode="numeric" autocomplete="off" placeholder="código" aria-label="Código de acceso">
+        <button type="submit">Ver</button>
+      </form>
+      <p class="err" id="gate-err" role="status"></p>
+    </div>
+    <div class="stats" id="stats" hidden></div>
+  </div>
+
+
+<script>
+(function(){
+  // ─────────────────────────────────────────────────────────────
+  //  CONEXIÓN CON LA HOJA DE CÁLCULO
+  //  Pega aquí la URL de la aplicación web de Apps Script.
+  //  Mientras esté vacía, ni se registra nada ni hay panel de uso.
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbw-V80bzK8c3N2X4te_0alB53BmcMIUO8ArcXYiriUlThmAncXJtdieYprdKUexDhyW/exec';
+  //  Interruptor del filtro de datos personales. En true, no se envía
+  //  ninguna búsqueda con pinta de matrícula, DNI, teléfono o email.
+  var FILTRAR_DATOS_PERSONALES = false;
+  var PAGINA = 'mecanica';
+  // ─────────────────────────────────────────────────────────────
+
+  var input = document.getElementById('q');
+  var clear = document.getElementById('clear');
+  var count = document.getElementById('count');
+  var empty = document.getElementById('empty');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('#chips .chip'));
+  var tabBtns = Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));
+  var panels = { faq: document.getElementById('panel-faq'), uso: document.getElementById('panel-uso') };
+
+  function norm(s){ return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,''); }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  var items = Array.prototype.slice.call(document.querySelectorAll('.faq')).map(function(el){
+    var block = el.closest('section.block');
+    var h3 = el.querySelector('h3'), quote = el.querySelector('.quote');
+    var ctx = '';
+    if(block){
+      var bh = block.querySelector('.block-head'), ru = block.querySelector('.ruta');
+      ctx = (bh ? ' ' + bh.textContent : '') + (ru ? ' ' + ru.textContent : '');
+    }
+    return { el: el, block: block, h3: h3, quote: quote,
+             h3Text: h3 ? h3.textContent : '', quoteText: quote ? quote.textContent : '',
+             hay: norm(el.textContent + ctx) };
+  });
+
+  count.textContent = items.length + ' preguntas';
+
+  function paint(node, text, terms){
+    if(!node) return;
+    if(!terms.length){ node.textContent = text; return; }
+    var plain = norm(text), out = '', i = 0;
+    while(i < text.length){
+      var best = -1, bestLen = 0;
+      for(var t = 0; t < terms.length; t++){
+        if(plain.startsWith(terms[t], i) && terms[t].length > bestLen){ best = t; bestLen = terms[t].length; }
+      }
+      if(best > -1){ out += '<mark>' + esc(text.substr(i, bestLen)) + '</mark>'; i += bestLen; }
+      else { out += esc(text.charAt(i)); i += 1; }
+    }
+    node.innerHTML = out;
+  }
+
+  // ── registro de búsquedas ────────────────────────────────────
+  var PERSONAL = /\d{4}|[a-z]{3}\s*\d{3,4}|\d{3,4}\s*[a-z]{3}|@|\b\d{8}[a-z]\b/i;
+  var ultimo = '', timer = null;
+
+  // dentro del visor de artefactos de Claude no se permite llamar a servidores
+  // externos, así que ahí no se registra nada y el panel lo dice en vez de fallar
+  var EN_CLAUDE = /claudeusercontent|claude\.ai/.test(location.hostname);
+
+  function llamar(params){
+    return new Promise(function(resolve, reject){
+      var cb = 'cb' + Date.now() + Math.floor(Math.random()*1000);
+      var sc = document.createElement('script');
+      var t = setTimeout(function(){ limpiar(); reject(new Error('timeout')); }, 15000);
+      function limpiar(){ clearTimeout(t); try{ delete window[cb]; }catch(e){ window[cb] = undefined; }
+                          if(sc.parentNode) sc.parentNode.removeChild(sc); }
+      window[cb] = function(d){ limpiar(); resolve(d); };
+      sc.onerror = function(){ limpiar(); reject(new Error('red')); };
+      sc.src = ENDPOINT + '?' + params + '&callback=' + cb;
+      document.body.appendChild(sc);
+    });
+  }
+
+  function registrar(termino, resultados){
+    if(!ENDPOINT || EN_CLAUDE) return;
+    if(termino.length < 3 || termino === ultimo) return;
+    if(FILTRAR_DATOS_PERSONALES && PERSONAL.test(termino)) return;
+    ultimo = termino;
+    llamar('log=1&pagina=' + encodeURIComponent(PAGINA) +
+           '&termino=' + encodeURIComponent(termino) +
+           '&resultados=' + resultados).catch(function(){});
+  }
+
+  function run(){
+    var raw = input.value.trim();
+    var terms = norm(raw).split(/\s+/).filter(function(t){ return t.length > 1; });
+    var shown = 0;
+
+    items.forEach(function(it){
+      var ok = terms.every(function(t){ return it.hay.indexOf(t) > -1; });
+      it.el.hidden = !ok;
+      if(ok){ shown++; paint(it.h3, it.h3Text, terms); paint(it.quote, it.quoteText, terms); }
+    });
+
+    Array.prototype.slice.call(document.querySelectorAll('section.block')).forEach(function(b){
+      b.hidden = !b.querySelector('.faq:not([hidden])');
+    });
+
+    var filtering = terms.length > 0;
+    empty.style.display = (filtering && shown === 0) ? 'block' : 'none';
+    clear.style.display = raw ? 'block' : 'none';
+    count.textContent = filtering
+      ? (shown === 0 ? 'ninguna coincidencia' : shown + (shown === 1 ? ' pregunta' : ' preguntas'))
+      : items.length + ' preguntas';
+    chips.forEach(function(c){
+      c.setAttribute('aria-pressed', norm(c.textContent) === norm(raw) ? 'true' : 'false');
+    });
+
+    // se registra cuando deja de teclear, no en cada letra
+    clearTimeout(timer);
+    if(filtering){ timer = setTimeout(function(){ registrar(raw.toLowerCase(), shown); }, 1200); }
+  }
+
+  input.addEventListener('input', run);
+  clear.addEventListener('click', function(){ input.value=''; run(); input.focus(); });
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      input.value = (c.getAttribute('aria-pressed') === 'true') ? '' : c.textContent;
+      run(); input.focus();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === '/' && document.activeElement !== input && panels.faq && !panels.faq.hidden){
+      e.preventDefault(); input.focus(); input.select();
+    }
+    if(e.key === 'Escape' && document.activeElement === input){ input.value=''; run(); }
+  });
+
+  // ── pestañas ─────────────────────────────────────────────────
+  function selectTab(name){
+    tabBtns.forEach(function(b){ b.setAttribute('aria-selected', b.getAttribute('data-tab') === name ? 'true' : 'false'); });
+    Object.keys(panels).forEach(function(k){ if(panels[k]) panels[k].hidden = (k !== name); });
+    if(name === 'faq' && !('ontouchstart' in window)) input.focus();
+  }
+  tabBtns.forEach(function(b){
+    b.addEventListener('click', function(){ selectTab(b.getAttribute('data-tab')); });
+  });
+
+  // ── panel de uso ─────────────────────────────────────────────
+  var gate = document.getElementById('gate');
+  var gateForm = document.getElementById('gate-form');
+  var gateErr = document.getElementById('gate-err');
+  var stats = document.getElementById('stats');
+
+  function pedir(codigo){
+    return llamar('code=' + encodeURIComponent(codigo) + '&pagina=' + encodeURIComponent(PAGINA));
+  }
+
+  function barras(lista, cero){
+    if(!lista || !lista.length) return '<p class="vacio">Todavía no hay nada registrado.</p>';
+    var max = lista[0].n || 1;
+    return '<div class="bars">' + lista.map(function(r){
+      return '<div class="bar-row"><span class="bar-label">' + esc(r.t) + '</span>' +
+             '<span class="bar-track"><span class="bar-fill' + (cero ? ' cero' : '') + '" style="width:' +
+             Math.max(3, Math.round(r.n / max * 100)) + '%"></span></span>' +
+             '<span class="bar-val">' + r.n + '</span></div>';
+    }).join('') + '</div>';
+  }
+
+  function pintar(d){
+    var h = '';
+    h += '<div class="kpis">';
+    h += '<div class="kpi"><b>' + (d.total || 0) + '</b><span>búsquedas</span></div>';
+    h += '<div class="kpi"><b>' + (d.distintas || 0) + '</b><span>términos distintos</span></div>';
+    h += '<div class="kpi"><b>' + (d.sinResultadoTotal || 0) + '</b><span>sin resultado</span></div>';
+    h += '<div class="kpi"><b>' + (d.dias || 0) + '</b><span>días con uso</span></div>';
+    h += '</div>';
+    h += '<h2>Lo que más se busca</h2><p class="sub">Términos escritos en el buscador de esta página</p>' + barras(d.top);
+    h += '<h2>Búsquedas sin resultado</h2><p class="sub">Lo que el equipo busca y la lista no responde: candidatas a entrar</p>' + barras(d.sinResultado, true);
+    if(d.ultimos && d.ultimos.length){
+      h += '<h2>Últimos días</h2><p class="sub">Búsquedas por día</p>' + barras(d.ultimos);
+    }
+    stats.innerHTML = h;
+    stats.hidden = false;
+    gate.hidden = true;
+  }
+
+  if(gateForm){
+    gateForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      gateErr.textContent = '';
+      if(!ENDPOINT){ gateErr.textContent = 'Falta conectar la hoja de cálculo.'; return; }
+      if(EN_CLAUDE){
+        gateErr.textContent = 'Esta copia está dentro de Claude, que no deja conectar con la hoja. Abre la versión publicada en la web.';
+        return;
+      }
+      var c = document.getElementById('codigo').value.trim();
+      if(!c) return;
+      gateErr.textContent = 'Consultando…';
+      pedir(c).then(function(d){
+        if(d && d.error){ gateErr.textContent = 'Ese código no vale.'; return; }
+        pintar(d || {});
+      }).catch(function(){
+        gateErr.textContent = 'No se ha podido conectar con la hoja.';
+      });
+    });
+  }
+
+  run();
+  selectTab('faq');
+})();
+</script>
+</body>
+</html>

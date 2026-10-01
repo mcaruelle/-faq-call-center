@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Preguntas frecuentes del Call Center: lunas y mecánica rápida.">
+<meta name="theme-color" content="#F4F6F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1417" media="(prefers-color-scheme: dark)">
+<title>FAQ del Call Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    color-scheme:light dark;
+    padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+    --bg:#F4F6F7; --surface:#FFFFFF; --ink:#131A1F; --ink-2:#3C4A53;
+    --muted:#65767F; --line:#D9E1E5; --line-strong:#BFCCD3; --accent:#0E5C75;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0E1417; --surface:#161D22; --ink:#E9EFF2; --ink-2:#C2CED5;
+      --muted:#93A2AB; --line:#27333A; --line-strong:#38474F; --accent:#63B9D6;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0E1417; --surface:#161D22; --ink:#E9EFF2; --ink-2:#C2CED5;
+    --muted:#93A2AB; --line:#27333A; --line-strong:#38474F; --accent:#63B9D6;
+  }
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:15.5px;line-height:1.6;padding-inline:20px;padding-block:0 72px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;}
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--accent);margin:0 0 14px;
+  }
+  h1{
+    font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(30px,6vw,42px);
+    line-height:1.08;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance;
+  }
+  .lede{font-size:17px;color:var(--ink-2);margin:0 0 36px;max-width:52ch;}
+  header{padding-block:56px 0;}
+  .fichas{display:grid;gap:14px;}
+  a.ficha{
+    display:block;text-decoration:none;color:inherit;
+    background:var(--surface);border:1px solid var(--line-strong);border-radius:12px;
+    padding:22px 24px;
+  }
+  a.ficha:hover{border-color:var(--accent);}
+  a.ficha:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+  a.ficha h2{
+    font-family:"Archivo",sans-serif;font-size:21px;font-weight:600;margin:0 0 4px;
+    display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  }
+  a.ficha h2 span{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:400;color:var(--muted);
+    letter-spacing:.06em;
+  }
+  a.ficha p{margin:0;color:var(--ink-2);font-size:14.5px;}
+  footer{margin-top:40px;font-size:12.5px;color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Call Center · Qué decir al cliente</p>
+    <h1>Preguntas frecuentes</h1>
+    <p class="lede">Busca lo que te está diciendo el cliente y te sale la frase para responderle. Elige el servicio.</p>
+  </header>
+
+  <div class="fichas">
+    <a class="ficha" href="lunas.html">
+      <h2>Lunas <span>34 PREGUNTAS</span></h2>
+      <p>Partes de parabrisas, talleres y citas, cobertura, peritos y reclamaciones.</p>
+    </a>
+    <a class="ficha" href="mecanica.html">
+      <h2>Mecánica rápida <span>93 PREGUNTAS</span></h2>
+      <p>Neumáticos, baterías, revisiones, frenos, matrículas y gestión de citas en Aurgi y Motortown.</p>
+    </a>
+  </div>
+
+  <footer>Dudas o preguntas que falten: díselo a Marie-Claire y entran en la próxima actualización.</footer>
+</div>
+</body>
+</html>
